@@ -25,18 +25,10 @@ to get started, clone this repo and set up your environment:
 
    ensure all imports work correctly by adding the project root to your `pythonpath`:
 
-   - **using setup script**  
-     make the setup script executable and run it:
-
-     ```bash
-     chmod +x ./setup.sh
-     ./setup.sh
-     ```
-
    - **setting pythonpath manually**  
-     alternatively, set `pythonpath` manually:
+     set `pythonpath` manually:
      ```bash
-     export pythonpath="/path/to/data-forge"
+     export PYTHONPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
      ```
 
 ## usage
