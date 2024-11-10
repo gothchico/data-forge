@@ -1,65 +1,65 @@
-# Data Forge
+# data forge
 
-Data Forge is a data platform that helps manage and analyze different types of data, such as intraday trading data and news sentiment data. It includes features like a data lake, a data catalog, a data workbench, and quantitative data models, allowing you to easily store, retrieve, and transform data.
+data platform
 
-## Setup
+## setup
 
-To get started, clone this repo and set up your environment:
+to get started, clone this repo and set up your environment:
 
-1. **Clone the Repository**
+1. **clone the repository**
 
    ```bash
    git clone <repository-url>
    cd data-forge
    ```
 
-2. **Set Up the Conda Environment**
+2. **set up the conda environment**
 
-   Install the required dependencies:
+   install the required dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Add the Root Directory to Python Path**
+3. **add the root directory to python path**
 
-   Ensure all imports work correctly by adding the project root to your `PYTHONPATH`:
+   ensure all imports work correctly by adding the project root to your `pythonpath`:
 
-   - **Using Setup Script**  
-     Make the setup script executable and run it:
+   - **using setup script**  
+     make the setup script executable and run it:
 
      ```bash
      chmod +x ./setup.sh
      ./setup.sh
      ```
 
-   - **Setting PYTHONPATH Manually**  
-     Alternatively, set `PYTHONPATH` manually:
+   - **setting pythonpath manually**  
+     alternatively, set `pythonpath` manually:
      ```bash
-     export PYTHONPATH="/path/to/data-forge"
+     export pythonpath="/path/to/data-forge"
      ```
 
-## Usage
+## usage
 
-### Running Simulations
+### running simulations
 
-To try out a simulation of the platform, run:
+to try out a simulation of the platform, run:
 
 ```bash
 python test/integration-test/simulation.py
 ```
 
-This will generate some sample data, store it in the data lake, add it to the catalog, and run a few transformations and analyses using the main components.
+this will generate some sample data, store it in the data lake, add it to the catalog, and run a few transformations and analyses using the main components.
 
-### Running Unit Tests
+### running unit tests
 
-You can run the unit tests to check that everything’s working as expected:
+you can run the unit tests to check that everything’s working as expected:
 
 ```bash
 python -m unittest discover -s test/unit-test
 ```
 
-For more detailed output for each test, use:
+for more detailed output for each test, use:
 
 ```bash
 python -m unittest discover -s test/unit-test -v
